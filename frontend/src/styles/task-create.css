@@ -1,0 +1,145 @@
+.create-task-modal {
+  max-width: 980px;
+  height: min(90vh, 860px);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 12px;
+  border: 1px solid #3a4358;
+  background: linear-gradient(180deg, #222933 0%, #1d2430 100%);
+}
+
+.create-task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  border-bottom: 1px solid #364155;
+}
+
+.create-task-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #f1f6ff;
+}
+
+.create-task-close {
+  border: 1px solid #3d4960;
+  background: #141b28;
+  color: #c7d4eb;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.create-task-form {
+  overflow: auto;
+  padding: 1rem 1.15rem 1.15rem;
+}
+
+.create-task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.create-task-grid .span-2 {
+  grid-column: 1 / -1;
+}
+
+.create-task-grid label {
+  color: #d7dfef;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.create-task-grid small {
+  color: #9da9c0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.task-divider {
+  height: 1px;
+  background: #344054;
+  margin: 1rem 0;
+}
+
+.task-upload {
+  border: 1px dashed #4a5a75;
+  border-radius: 10px;
+  padding: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.task-upload input[type='file'] {
+  flex: 0 0 auto;
+  max-width: 250px;
+}
+
+.task-upload span {
+  color: #a9b8d3;
+}
+
+.create-task-form input,
+.create-task-form textarea,
+.create-task-form select {
+  border: 1px solid #3f4d65;
+  background: #141b27;
+  color: #e5ecfb;
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+}
+
+.create-task-form input:focus,
+.create-task-form textarea:focus,
+.create-task-form select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+.flagged-field {
+  align-items: flex-start;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+}
+
+.checkbox-row input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
+}
+
+.create-task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.1rem;
+  position: sticky;
+  bottom: 0;
+  padding-top: 0.7rem;
+  background: linear-gradient(180deg, rgba(29, 36, 48, 0), #1d2430 40%);
+}
+
+.create-task-actions .right-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .create-task-modal {
+    max-width: calc(100vw - 20px);
+  }
+
+  .create-task-grid {
+    grid-template-columns: 1fr;
+  }
+}

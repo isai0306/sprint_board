@@ -1,0 +1,250 @@
+.board-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.board-header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.board-header-actions {
+  margin-left: auto;
+}
+
+.board-header-actions .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+}
+
+.board-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.board-error {
+  border-radius: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  background-color: rgba(185, 28, 28, 0.16);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.6);
+  margin-bottom: 0.75rem;
+}
+
+.board-lists {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-main {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  min-height: 0;
+}
+
+.board-kanban {
+  flex: 3;
+}
+
+.board-detail {
+  flex: 2;
+  background-color: #111118;
+  border-radius: 10px;
+  border: 1px solid #1f2030;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.75);
+  padding: 0.9rem 1rem;
+}
+
+.board-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.8rem;
+}
+
+.board-detail-assignee,
+.board-detail-due,
+.board-detail-status {
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+.board-detail-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.board-comments {
+  margin-top: 1rem;
+}
+
+.board-comments-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+}
+
+.board-comment {
+  border-bottom: 1px solid #1f2937;
+  padding: 0.35rem 0;
+  font-size: 0.8rem;
+}
+
+.board-comment-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.15rem;
+}
+
+.board-comment-author {
+  font-weight: 500;
+}
+
+.board-comment-date {
+  color: #6b7280;
+}
+
+.board-comments-empty {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.board-comment-form textarea {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid #1f2937;
+  background-color: #020617;
+  color: #e5e7eb;
+  padding: 0.4rem 0.55rem;
+  font-size: 0.8rem;
+}
+
+.board-comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.35rem;
+}
+
+.board-activity {
+  margin-top: 1rem;
+}
+
+.board-activity-list {
+  max-height: 180px;
+  overflow-y: auto;
+  font-size: 0.8rem;
+}
+
+.board-activity-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #111827;
+}
+
+.board-activity-message {
+  margin-bottom: 0.1rem;
+}
+
+.board-activity-date {
+  color: #6b7280;
+}
+
+.board-activity-empty {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+.board-list {
+  min-width: 260px;
+  max-width: 280px;
+  background: rgba(15, 23, 42, 0.93);
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.9);
+  padding: 0.75rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+}
+
+.board-list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.board-card {
+  border-radius: 0.8rem;
+  background-color: #020617;
+  padding: 0.55rem 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid rgba(30, 64, 175, 0.7);
+  cursor: grab;
+  transition: box-shadow 0.12s ease, transform 0.12s ease, border-color 0.12s ease;
+}
+
+.board-card:hover {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.85);
+}
+
+.board-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.board-card-title {
+  font-weight: 500;
+}
+
+.badge-priority {
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.badge-priority-low {
+  background-color: rgba(22, 163, 74, 0.18);
+  color: #bbf7d0;
+}
+
+.badge-priority-medium {
+  background-color: rgba(37, 99, 235, 0.16);
+  color: #bfdbfe;
+}
+
+.badge-priority-high {
+  background-color: rgba(234, 179, 8, 0.22);
+  color: #fef9c3;
+}
+
+.badge-priority-critical {
+  background-color: rgba(220, 38, 38, 0.22);
+  color: #fecaca;
+}

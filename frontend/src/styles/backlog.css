@@ -1,0 +1,62 @@
+.backlog-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.backlog-head h1 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+.backlog-head p {
+  margin: 0.3rem 0 0;
+  color: #95a4bf;
+}
+
+.backlog-board-group {
+  border: 1px solid #2a3347;
+  border-radius: 12px;
+  background: #111827;
+  padding: 0.9rem;
+}
+
+.backlog-board-group h2 {
+  margin: 0 0 0.6rem;
+}
+
+.backlog-table-wrap {
+  overflow-x: auto;
+}
+
+.backlog-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.backlog-table th,
+.backlog-table td {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid #243146;
+}
+
+.backlog-table th {
+  color: #95a4bf;
+  font-weight: 600;
+}
+
+.backlog-error {
+  border-radius: 8px;
+  border: 1px solid #ef4444;
+  background: rgba(127, 29, 29, 0.35);
+  color: #fecaca;
+  padding: 0.55rem 0.75rem;
+}
+
+.backlog-empty {
+  border: 1px dashed #3d4a62;
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  color: #95a4bf;
+}

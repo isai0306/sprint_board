@@ -1,0 +1,94 @@
+.kanban-board {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.kanban-list {
+  min-width: 260px;
+  max-width: 280px;
+  background-color: #111118;
+  border-radius: 10px;
+  border: 1px solid #1f2030;
+  padding: 0.75rem;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.85);
+}
+
+.kanban-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.kanban-add-card {
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.kanban-card {
+  border-radius: 10px;
+  background-color: #14141d;
+  padding: 0.55rem 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid #26263a;
+  cursor: grab;
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.kanban-card:hover {
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transform: translateY(-1px);
+  border-color: #d1d5db;
+}
+
+.kanban-card-title {
+  margin-bottom: 0.25rem;
+}
+
+.kanban-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.kanban-card-assignee {
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background-color: rgba(31, 41, 55, 0.9);
+  color: #e5e7eb;
+}
+
+.kanban-card-due {
+  color: #9ca3af;
+}
+
+.kanban-complete-btn {
+  margin-top: 0.35rem;
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 197, 94, 0.6);
+  background: transparent;
+  color: #bbf7d0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.4rem;
+  cursor: pointer;
+}
+
+.kanban-complete-btn:hover {
+  background-color: rgba(22, 163, 74, 0.2);
+}
+
+.kanban-complete-btn-marked {
+  border-color: rgba(59, 130, 246, 0.7);
+  color: #bfdbfe;
+  background-color: rgba(30, 64, 175, 0.2);
+}
